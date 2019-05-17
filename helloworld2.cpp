@@ -5,6 +5,6 @@ using namespace std;
 
 int print_something ()
 {
-  cout << "Printing something else.\n";
+  cout << "Printing something else changed locally.\n";
   return 0;
 }
