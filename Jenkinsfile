@@ -7,6 +7,6 @@ node {
 		}
 		stage ('Build') {
 			sh 'make'
-			sh 'hello'
+			sh './hello'
 		}
 }
