@@ -3,7 +3,7 @@ node {
 			deleteDir ()
 		}
 		stage ('Checkout') {
-			checkut scm
+			checkout scm
 		}
 		stage ('Build') {
 			sh 'make'
