@@ -1,6 +1,4 @@
 node {
-	def workspace = pwd()
-	try {
 		stage ('Clean') {
 			deleteDir ()
 		}
@@ -10,5 +8,4 @@ node {
 		stage ('Build') {
 			sh 'make'
 		}
-	}
 }
