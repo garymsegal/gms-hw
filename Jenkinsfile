@@ -1,0 +1,1 @@
+checkout([$class: 'GitSCM', branches: [[name: '*/master'], [name: '*/feature1']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/garymsegal/gms-hw.git']]])
