@@ -6,7 +6,6 @@ node {
 			checkout scm
 		}
 		stage ('Coverity Build') {
-			sh 'make clean'
 			sh 'cov-build --dir idir make'
 			// sh './hello'
 		}
