@@ -15,6 +15,6 @@ node {
 		}
 		stage ('Coverity commit') {
 		      // sh '/home/siguser/cov-analysis-2019.03/bin/cov-commit-defects --dir idir --stream HelloWorld --host localhost --port 8081 --user admin --password SIGpass8!'
-			  sh '/home/siguser/cov-analysis-2019.03/bin/cov-commit-defects --dir idir --stream HelloWorld --host localhost --port 8081 --auth-key-file ak-192.168.1.88-8081'
+			  sh '/home/siguser/cov-analysis-2019.03/bin/cov-commit-defects --dir idir --stream HelloWorld --host localhost --port 8081 --auth-key-file ak-192.168.1.88-8081' 
 		}
 }
