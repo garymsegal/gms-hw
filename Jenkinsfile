@@ -4,7 +4,7 @@ node {
 		}
 		stage ('Checkout') {
 			checkout scm
-			sh 'chmod 400 ak-192.168.1.88-8081'
+			// sh 'chmod 400 ak-192.168.1.88-8081'
 		}
 		stage ('Coverity Build') {
 			sh '/home/siguser/cov-analysis-2019.03/bin/cov-build --dir idir make'
