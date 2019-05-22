@@ -5,7 +5,7 @@ using namespace std;
 
 int print_something ()
 {
-  char *p;	// A pointer.
+  char *p=NULL;	// A pointer.
   
   printf ("%s\n", p);
 
