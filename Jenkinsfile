@@ -14,7 +14,7 @@ node {
 		      sh '/home/siguser/cov-analysis-2019.03/bin/cov-analyze --dir idir'
 		}
 		stage ('Coverity commit') {
-				withCredientials([string(credentialsId: 'covpwd', variable: 'COVPWD')]) {
+				withCredentials([string(credentialsId: 'covpwd', variable: 'COVPWD')]) {
 					sh '/home/siguser/cov-analysis-2019.03/bin/cov-commit-defects --dir idir --stream HelloWorld --host localhost --port 8081 --user admin --password ${COVPWD}'
 					//sh '/home/siguser/cov-analysis-2019.03/bin/cov-commit-defects --dir idir --stream HelloWorld --host localhost --port 8081 --auth-key-file ak-192.168.1.88-8081' 
 				}
