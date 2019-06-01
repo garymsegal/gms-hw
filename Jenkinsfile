@@ -11,7 +11,7 @@ node {
 			// sh './hello'
 		}
 		stage ('Coverity analyze') {
-			  sh '/home/siguser/cov-import-scm --dir idir --scm git'
+			  sh '/home/siguser/cov-analysis-2019.03/bin/cov-import-scm --dir idir --scm git'
 		      sh '/home/siguser/cov-analysis-2019.03/bin/cov-analyze --dir idir'
 		}
 		stage ('Coverity commit') {
